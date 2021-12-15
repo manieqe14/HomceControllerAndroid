@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/devices"
+        android:title="Devices"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:icon="@drawable/devices">
+
+    </item>
+
+    <item android:id="@+id/refresh"
+        android:title="Refresh"
+        android:orderInCategory="101"
+        app:showAsAction="always"
+        android:icon="@drawable/refresh_icon">
+
+    </item>
+
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        android:orderInCategory="102"
+        app:showAsAction="never"
+        android:icon="@drawable/settings_icon">
+
+    </item>
+
+    <item android:id="@+id/logout"
+        android:title="Logout"
+        android:orderInCategory="103"
+        app:showAsAction="never">
+
+    </item>
+
+</menu>

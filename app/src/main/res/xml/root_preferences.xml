@@ -1,0 +1,88 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/general">
+        <ListPreference
+            app:defaultValue="°C"
+            app:entryValues="@array/tempUnits_values"
+            app:entries="@array/tempUnits"
+            android:defaultValue="0"
+            app:key="tempUnit"
+            app:title="@string/temperature_units"
+            app:useSimpleSummaryProvider="true"/>
+
+        <MultiSelectListPreference
+            android:key="general_visibility"
+            android:entries="@array/general_visibility"
+            android:entryValues="@array/general_visibility_values"
+            android:title="@string/general_visibility"
+            android:dialogTitle="@string/general_visibility"
+            />
+        <EditTextPreference
+            app:title="Export settings"
+            />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/volumio_header">
+
+        <EditTextPreference
+            app:key="volumio_address"
+            app:title="@string/volumio_address"
+            app:useSimpleSummaryProvider="true" />
+
+        <MultiSelectListPreference
+            android:key="volumio_visibility"
+            android:entries="@array/vol_visibility"
+            android:entryValues="@array/vol_visibility_values"
+            android:title="@string/volumio_visibility"
+            android:dialogTitle="@string/volumio_visibility"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/supla_header">
+
+       <ListPreference
+            app:defaultValue="1"
+            app:entries="@array/supla_rows"
+            app:entryValues="@array/supla_row_values"
+            app:key="suplaRows"
+            app:title="@string/supla_rows"
+            app:useSimpleSummaryProvider="true"/>
+
+        <EditTextPreference
+            app:key="supla_address"
+            app:title="Server address"
+            app:useSimpleSummaryProvider="true"/>
+
+        
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/airly_header">
+
+        <SeekBarPreference
+            app:key="@string/station_quantity"
+            android:defaultValue="3"
+            android:max="10"
+            app:title="@string/station_quantity"
+            app:showSeekBarValue="true"
+            />
+
+        <SeekBarPreference
+            app:key="@string/max_dist"
+            android:defaultValue="5"
+            android:max="100"
+            app:title="@string/max_dist"
+            app:showSeekBarValue="true"
+            />
+
+
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>
